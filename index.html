@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ceaser">
+        <h1>Caesar Cipher</h1>
+       
+        <form>
+            <label>Plaintext:</label>
+            <textarea class="encryptCeaser" name='plaintext'>Ceaser Secret</textarea>
+            <label>Shift:</label>
+            <input type='number' name='shift' value='3' min='1' max='26'>
+            <input type='submit' value='encryptCeaser'>
+        </form>
+        <h2>Output</h2>
+        <div id='outputCeaser'>
+        </div>
+    </div>
+    <div class="Playfair">
+        <h1>Playfair Cipher</h1>
+
+
+        <input id="keyword" placeholder="Enter the Key Word">
+        <br />
+        <button id="generateKeytable">Generate Key Table</button>
+        <button id="regenerateKeytable" style="display: none">Regenerate Key Table</button>
+        <br />
+        <span id="AfterGen" style="display: none">
+            <div id="keyTable"></div>
+
+            <textarea id="en" cols="50" rows="5"></textarea><br /><button id="encipher">Encrypt</button><br />
+            <br />
+            <textarea id="de" cols="50" rows="5"></textarea><br /><button id="decipher">Decrypt</button>
+        </span>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+
+</html>
